@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mon formulaire de création de compte</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header class="blue lighten-2 valign-wrapper">
+    <nav>
+      <ul>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="index.php">Inscription</a></li>
+        <li><a href="index.php">Connexion</a></li>
+        <li><a href="index.php">Rechercher</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section>
+    <h2>Formulaire de création de compte</h2>
+    <form action="index.php" method="POST" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">person</i>
+          <input type="text" id="prenom" name="prenom" class="validate">
+          <label for="prenom">Prénom</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">person</i>
+          <input type="text" id="nom" name="nom" class="validate">
+          <label for="nom">Nom</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">home</i>
+          <input type="text" id="adresse" name="adresse" class="validate">
+          <label for="adresse">Adresse</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email" name="email" class="validate">
+          <label for="email">Adresse email</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">lock</i>
+          <input type="password" id="password" name="password" class="validate">
+          <label for="password">Mot de passe</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">lock</i>
+          <input type="password" id="password-confirm" name="password-confirm" class="validate">
+          <label for="password-confirm">Confirmer le mot de passe</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">favorite</i>
+          <label for="passions">Passions</label>
+          <br>
+          <p>
+            <label>
+              <input type="checkbox" id="informatique" name="passions" value="informatique"/>
+              <span>Informatique</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" id="voyages" name="passions" value="voyages"/>
+              <span>Voyages</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" id="sport" name="passions" value="sport"/>
+              <span>Sport</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" id="lecture" name="passions" value="lecture"/>
+              <span>Lecture</span>
+            </label>
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Valider
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </section>
+  
+  <footer class="blue lighten-2 valign-wrapper">
+    <ul>
+      <li><a href="index.php">Accueil</a></li>
+      <li><a href="index.php">Inscription</a></li>
+      <li><a href="index.php">Connexion</a></li>
+      <li><a href="index.php">Rechercher</a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

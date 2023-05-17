@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mon formulaire de création de compte</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <header class="blue lighten-2 valign-wrapper">
+    <nav>
+      <ul>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="index.php">Inscription</a></li>
+        <li><a href="index.php">Connexion</a></li>
+        <li><a href="index.php">Rechercher</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section>
+    <h2>Formulaire de création de compte</h2>
+    <form action="index.php" method="POST">
+      <label for="civilite">Civilité:</label>
+      <input type="radio" id="civilite-m" name="civilite" value="Monsieur">
+      <label for="civilite-m">Monsieur</label>
+      <input type="radio" id="civilite-mme" name="civilite" value="Madame">
+      <label for="civilite-mme">Madame</label>
+      
+      <br>
+      
+      <label for="prenom">Prénom:</label>
+      <input type="text" id="prenom" name="prenom">
+      
+      <br>
+      
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom">
+      
+      <br>
+      
+      <label for="adresse">Adresse:</label>
+      <input type="text" id="adresse" name="adresse">
+      
+      <br>
+      
+      <label for="email">Adresse email:</label>
+      <input type="email" id="email" name="email">
+      
+      <br>
+      
+      <label for="password">Mot de passe:</label>
+      <input type="password" id="password" name="password">
+      
+      <br>
+      
+      <label for="password-confirm">Confirmer le mot de passe:</label>
+      <input type="password" id="password-confirm" name="password-confirm">
+      
+      <br>
+      
+      <label for="passions">Passions:</label>
+      <input type="checkbox" id="informatique" name="passions" value="informatique">
+      <label for="informatique">Informatique</label>
+      <input type="checkbox" id="voyages" name="passions" value="voyages">
+      <label for="voyages">Voyages</label>
+      <input type="checkbox" id="sport" name="passions" value="sport">
+      <label for="sport">Sport</label>
+      <input type="checkbox" id="lecture" name="passions" value="lecture">
+      <label for="lecture">Lecture</label>
+      
+      <br>
+      
+      <input type="submit" value="Valider">
+    </form>
+  </section>
+  
+  <footer class="blue lighten-2 valign-wrapper">
+    <ul>
+      <li><a href="index.php">Accueil</a></li>
+      <li><a href="index.php">Inscription</a></li>
+      <li><a href="index.php">Connexion</a></li>
+      <li><a href="index.php">Rechercher</a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
